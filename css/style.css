@@ -1,0 +1,239 @@
+body, html {
+  height: 100%;
+}
+.bg {
+  background-image: url("../img/sport.jpg");
+  filter: brightness(50%);
+  height: 70%;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.jumbotron {
+  position: relative;
+  text-align: center;
+  top: -45%;
+  background: none;
+}
+.centered {
+  font-family: 'Lemonada', cursive;
+  position: absolute;
+  top: 	50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white
+}
+
+/* header */
+
+
+* {box-sizing: border-box;}
+
+body { 
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  overflow: hidden;
+  background-color: black;
+  padding: 5px 10px;
+}
+
+.header a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 30px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 1px;
+  border-radius: 4px;
+}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.header a:hover {
+  color: red;
+}
+
+.header-right {
+  float: right;
+}
+
+.logoimg{
+	height: 50px;
+	margin-top: -30%;
+	margin-bottom: -30%;
+}
+
+
+@media screen and (max-width: 500px) {
+  .header{
+    width: 100%;
+  }
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .header-right {
+    float: none;
+  }
+}
+
+
+
+
+
+/*Login page*/
+@import url('https://fonts.googleapis.com/css?family=Numans');
+.loginbg {
+  position: relative;
+  width: 100%;
+  background-size: cover; 
+}
+.container{
+height: 100%;
+align-content: center;
+}
+
+.card{
+height: 400px;
+margin-top: auto;
+margin-bottom: auto;
+width: 430px;
+background-color: rgba(0,0,0,0.5);
+}
+
+.card-header h2{
+color: white;
+}
+
+.input-group-prepend span{
+width: 50px;
+background-color: #FFC312;
+color: black;
+border:0 ;
+}
+
+input:focus{
+outline: 0 0 0 0 ;
+box-shadow: 0 0 0 0;
+}
+
+.remember{
+color: white;
+}
+
+.remember input
+{
+width: 20px;
+height: 20px;
+margin-left: 15px;
+margin-right: 5px;
+}
+
+.login_btn{
+color: black;
+background-color: #FFC312;
+width: 100px;
+}
+
+.login_btn:hover{
+color: black;
+background-color: white;
+}
+
+.links{
+color: white;
+}
+
+.links a{
+margin-left: 4px;
+}
+
+
+
+
+
+/*home page */
+.dropdown {
+  float: left;
+  display: inline-block;
+  position: relative;
+}
+
+.dropdown .dropbtn {
+  font-size: 20px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 16px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: fixed;
+  float: left;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 24px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+.hover{
+  font-size: 30px;
+}
+
+
+
+.zoom {
+  transition: transform .2s;
+}
+
+.zoom:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.2); 
+}
+
+.hover{
+  font-size: 40px;
+}
+
+#heading{
+  text-align: center;
+}
+
+.portfolio{
+  height: 300px;
+  border-radius: 50px;
+}

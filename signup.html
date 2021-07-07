@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+     <link href="https://fonts.googleapis.com/css2?family=Lemonada:wght@600&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Signup</title>
+    <style>
+            #myVideo {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%; 
+            min-height: 100%;
+          }
+      @import url('https://fonts.googleapis.com/css?family=Numans');
+.loginbg {
+  position: relative;
+  width: 100%;
+  background-size: cover; 
+}
+.container{
+height: 100%;
+align-content: center;
+}
+
+.card{
+height: 500px;
+margin-top: auto;
+margin-bottom: auto;
+width: 430px;
+background-color: rgba(0,0,0,0.7);
+}
+
+.card-header h2{
+color: white;
+}
+
+.input-group-prepend span{
+width: 50px;
+background-color: #FFC312;
+color: black;
+border:0 ;
+}
+
+input:focus{
+outline: 0 0 0 0 ;
+box-shadow: 0 0 0 0;
+}
+
+.remember{
+color: white;
+}
+
+.remember input
+{
+width: 20px;
+height: 20px;
+margin-left: 15px;
+margin-right: 5px;
+}
+
+.login_btn{
+color: black;
+background-color: #FFC312;
+width: 100px;
+}
+
+.login_btn:hover{
+color: black;
+background-color: white;
+}
+
+.links{
+color: white;
+}
+
+.links a{
+margin-left: 4px;
+}
+    </style>
+  </head>
+  <body>
+    <video autoplay muted loop id="myVideo">
+        <source src="img/signuppage.mov" type="video/mp4">
+      </video>
+      
+     <div class="container">
+  <div class="d-flex justify-content-center h-100">
+    <div class="card">
+      <div class="card-header">
+        <h2>Sign Up</h2>
+        <p style="color: white">Please fill in this form to create an account.</p>
+      </div>
+      <div class="card-body">
+        <form name="myform" method="POST">
+          <div class="input-group form-group">
+            <input type="email" name="name" class="form-control" placeholder="E-mail" required> 
+          </div>
+          <div class="input-group form-group">
+            <input type="password" name="password" class="password form-control" placeholder="enter password" required>
+          </div>
+           <div class="input-group form-group">
+            <input type="password" name="newpassword" class="newpassword form-control" placeholder="repeat password" required>
+          </div>
+          <div style="color: white">
+            Gender &emsp;<input type="radio" id="male" name="gender" value="male" >
+            <label for="male" style="color: white">Male</label>
+            <input type="radio" id="female" name="gender" value="female" >
+            <label for="female" style="color: white">Female</label><br>
+          </div>
+          <div>
+    
+              <label for="birthday" style="color: white">Birthday:&emsp;</label>
+              <input type="date" id="birthday" name="birthday">
+            
+          </div>
+          <div class="row align-items-center remember my-2">
+            <input type="checkbox">Remember Me
+          </div>
+          <div class="form-group my-3">
+            <a href="index.html"><button type="button" class="zoom btn btn-danger">Cancel</button></a> 
+            <input type="submit" value="Submit" class="zoom btn float-right login_btn" onclick="return validateform()">
+          </div>
+          <div style="color: white">
+          <p>Already have an account?  <a href="login.html">Login</a></p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+<script src="script.js"></script>
+
+
+<!-- 
+    <footer style="background-color: none;text-align: center;color: white;bottom: 0;width: 100%;height: 100px;padding-top: 2px;position: fixed;">
+    <div>
+    <p>&copy by Akhila</p>
+    <a href="https://www.instagram.com/lahari_polepalli/"><img src="img/insta.jpg" alt="insta" style="height: 30px;padding-right: 5px;border-radius: 10px"></a>
+    <a href="https://twitter.com/AKHILAJULAKANT2"><img src="img/twitter.png" alt="twitter" style="height: 30px;padding-right: 5px;border-radius: 10px"></a>
+    <a href="mailto:akhilajulakanti77@gmail.com"><img src="img/mail.jpg" alt="fb" style="height: 30px;padding-right: 5px;border-radius: 10px"></a>
+    <a href="https://google.com"><img src="img/google.png" alt="google" style="height: 30px;border-radius: 10px"></a>
+    </div>
+</footer> -->
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  </body>
+</html>

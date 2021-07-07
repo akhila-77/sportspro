@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Lemonada:wght@500&display=swap" rel="stylesheet">
+
+<style> 
+#panel, #flip ,.hideme,.aboutme1,.hideme1,.aboutme2{
+  width: 200px;
+  padding: 5px;
+  text-align: center;
+  background-image: linear-gradient(pink,white);
+  border: solid 1px #c3c3c3;
+  border-radius: 20px;
+}
+
+#panel,.aboutme1,.aboutme2{
+  width: 400px;
+  padding: 50px;
+  display: none;
+}
+
+body{
+  font-family: 'Lemonada', cursive;
+
+}
+
+button{
+  font-size: 12px;
+  font-family: 'Lemonada', cursive;
+}
+#cycler{
+  position:relative;
+}
+#cycler img{
+  position:absolute;z-index:1
+}
+#cycler img.active{
+  z-index:3
+}
+
+.imgp{
+    height: 500px;
+    width: 1000px;
+    margin-left: 300px;
+    margin-bottom: 50px;
+} 
+
+</style>
+</head>
+<body>
+  <header>
+   <div class="header">
+          <a href="index.html" class="logo"><img src="img/logo.png" class="logoimg"></a>
+          <div class="header-right">
+            <a class="active" href="index.html">Home</a>
+            <a href="login.html">Login</a>
+            <a href="signup.html">Signup</a>
+          </div>
+        </div>
+    </header>
+ <h1 id="heading">some of the famous sport persons</h1>
+
+<div align="center" style="float: left;">
+<img src="img/dhoni.jpg" class="portfolio"><br>
+<div id="flip">About me</div>
+<div id="panel">Mahendra Singh Dhoni 
+  <br>Indian former international cricketer<br>
+  Born: 7 July 1981 <br> Ranchi<br></div>
+</div>
+
+<div align="center" style="float: right;">
+<img src="img/saina.jpg" class="portfolio"><br>
+<div class="hideme">About me</div>
+<div class="aboutme1">Saina Nehwal <br>Indian professional badminton<br> singles player <br>Born: 17 March 1990</div>
+</div>
+
+<div align="center">
+<img src="img/mary.jpg" class="portfolio" style="margin-right: 60px"><br>
+<div class="hideme1">About me</div>
+<div class="aboutme2">Mangte Chungneijang Mary Kom<br> Indian amateur boxer<br>and incumbent Member of Parliament<br>
+  Born: 1 March 1983 <br> </div>
+</div>
+
+<br><br><br>
+
+<div id="cycler">
+<img class="active imgp" src="img/cristiano.jpg" alt="My image" />
+<img src="img/sachin.jpg" alt="My image" class="imgp" /> 
+<img src="img/sinfhu.jpg" alt="My image" class="imgp" /> 
+<img src="img/kohli.jpg" alt="My image" class="imgp" />   
+</div>
+
+
+<script type="text/javascript" src="query.js"></script>
+
+
+
+</body>
+</html>
